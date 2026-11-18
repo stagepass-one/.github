@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Docs
+    url: https://stagepass.one/docs/
+    about: Setup, CLI, loader, modules, security and CORS.
+  - name: Troubleshooting
+    url: https://stagepass.one/docs/troubleshooting/
+    about: Common problems and fixes. Worth a look before you open an issue.
+  - name: Security vulnerability
+    url: https://github.com/stagepass-one/os/security/advisories/new
+    about: Report vulnerabilities privately via GitHub. See SECURITY.md. Do not open a public issue.

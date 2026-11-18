@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a problem
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Fill in every section you can.
+        Do not include secrets, tokens, private URLs, or credentials.
+        Bugs in the CLI, loader or modules belong in [stagepass-one/os](https://github.com/stagepass-one/os/issues/new/choose).
+
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Versions of the affected packages or the CDN pin you use (e.g. `@stagepass/cli` 2.1.0, `loader@2`).
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system and browser with versions, if relevant.
+      placeholder: "macOS 15.1, Chrome 131"
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps someone else can follow.
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: What happened instead, including errors or console output (no secrets).
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: Secrets
+      options:
+        - label: I have not included secrets, tokens, private credentials, or sensitive URLs in this report.
+          required: true
